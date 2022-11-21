@@ -1,0 +1,48 @@
+* {
+  transition: all 0.25s;
+}
+
+.Detodito {
+  margin: 0;
+  padding: 0;
+  background-color: steelblue;
+  background-image: url(https://presenterse.com/wp-content/uploads/2022/06/webdia-mundial-del-medio-ambiente.png-scaled.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 120%;
+  text-align: center;
+}
+
+#encabezado {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.opcion {
+  width: 70vw;
+  background: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.opcion:hover{
+     background: lightgray;
+}

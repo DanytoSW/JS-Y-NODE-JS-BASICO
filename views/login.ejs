@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=”UTF-8″/>
+        <title>Proyecto</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+        <script src="https://kit.fontawesome.com/190781bd85.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navegacion">
+                <h1 class="logotipo"><img src="img/logotipo.jpeg"></h1>
+                <ul>
+                    <li><a href="proyecto">Inicio</a></li>
+                    <li><a href="problematica">Problematica</a></li>
+                    <li><a href="proponer">¿Qué proponemos?</a></li>
+                    <li><a href="login">Cuestionario</a></li>
+                </ul>
+            </nav> 
+        </header>
+
+    <div class="fondo-formulario">
+        <div class="formulario">
+            <h2>Inicio de sesion</h2>
+            <form action="/login" method="POST">
+                <div class="username">
+                    <input name="user" type="text" required placeholder="Usuario">
+                </div>
+                <div class="username">
+                    <input name="pass" type="password" required placeholder="Contraseña">
+                </div>
+                <button class="boton-registro" value="submit">Iniciar</button>
+                <div class="registrarse">
+                    Quiere hacer el <a href="register" id="letra">registro</a>
+                </div>
+            </form>
+        </div>
+     </div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <% if(alert) { %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle %>',
+                text: '<%= alertMessage %>',
+                icon: '<%= alertIcon %>,',
+                showConfirmButton: <%= showConfirmButton %>,
+                timer: <%= timer %>
+            }).then(()=>{
+                window.location = '/<%= ruta %>'
+            })
+        </script>
+     <% } %>
+
+    </body>
+</html>
